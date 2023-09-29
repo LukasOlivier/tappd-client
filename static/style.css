@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Staatliches&family=Lato:wght@700&display=swap');
+
+.hidden {
+	display: none !important;
+}
+
+body {
+	max-width: 95%;
+	margin: 2rem auto 0 auto;
+	background: #f2f2f2;
+}
+
+h1,
+h2 {
+	font-family: 'Staatliches', cursive;
+}
+
+p {
+	font-size: 0.9rem;
+	font-family: 'Lato', sans-serif;
+}
+
+.clickable {
+	cursor: pointer;
+}
+
+.slide-up {
+	animation: slideUp 0.2s ease forwards;
+}
+
+@keyframes slideUp {
+	0% {
+		transform: translateY(100%);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+@keyframes grow {
+	0% {
+		transform: translateY(-50%) scaleX(0);
+	}
+	100% {
+		transform: translateY(-50%) scaleX(1);
+	}
+}
+
+.growFromLeft {
+	animation: 0.5s ease-out 0s 1 growFromLeft;
+}
+.growFromRight {
+	animation: 0.5s ease-out 0s 1 growFromRight;
+}
+
+.item-container:hover {
+	background: #e9e9e9;
+}
